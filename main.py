@@ -27,7 +27,7 @@ if "messages" not in st.session_state.keys():
 def load_data():
     try:
         # Loading documents from directory
-        reader = SimpleDirectoryReader(input_dir="C:\\Users\\DELL\\OneDrive\\Desktop\\llamaindex projects2\\DCSA Chatbot\\Data\\", recursive=True)
+        reader = SimpleDirectoryReader(input_dir="./Data/", recursive=True)
         docs = reader.load_data()
         print(docs)
 
